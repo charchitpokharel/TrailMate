@@ -1,0 +1,19 @@
+TrailMate starter app (CodeIgniter 4 app folder)
+
+This is an app/ directory intended to be copied into an existing CodeIgniter 4 project.
+It is not a standalone framework distribution.
+
+Setup:
+1. Create/install a CodeIgniter 4 project using the official installer.
+2. Replace its app/ directory with this app/ directory (keep your project-level public/, writable/, vendor/ and system/ folders).
+3. Configure app/Config/Database.php for your local MySQL database.
+4. Ensure the app/Config/Routes.php file is used and CSRF protection is configured consistently.
+5. Run migrations: php spark migrate
+6. Start the server: php spark serve
+
+The app currently includes trail CRUD, live trail search, session-based favourites,
+review submission and an Open-Meteo current-weather endpoint. Authentication and
+persistent user-owned favourites/trip plans are not yet implemented.
+
+For local testing, use HTTPS or localhost for browser geolocation. Review all routes,
+security settings, database configuration and framework compatibility before deployment.
